@@ -1,0 +1,22 @@
+{
+  "name": "resume-factory-editor",
+  "version": "1.0.0",
+  "description": "Resume Factory's rich text editor monorepo.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "packages/*",
+    "example"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damonturcotte/resume-factory-editor.git"
+  },
+  "author": "Damon Turcotte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/damonturcotte/resume-factory-editor/issues"
+  },
+  "homepage": "https://github.com/damonturcotte/resume-factory-editor#readme"
+}
