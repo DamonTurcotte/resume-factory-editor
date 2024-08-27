@@ -15,12 +15,14 @@
   "devDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.74.5"
+    "react-native": "0.74.5",
+    "react-native-webview": "13.8.6"
   },
   "peerDependencies": {
     "react": "*",
     "react-dom": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-webview": "*"
   },
   "repository": {
     "type": "git",
