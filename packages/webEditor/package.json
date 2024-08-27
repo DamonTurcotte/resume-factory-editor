@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "dist/index.html",
+  "main": "dist/editorHtml.ts",
   "scripts": {
-    "dev": "vite",
+    "start": "vite --host",
     "build": "tsc && vite build && node ./scripts/postBuild.js ./dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "preview": "vite preview"
