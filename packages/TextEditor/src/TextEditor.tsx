@@ -1,11 +1,25 @@
 import React from "react";
-import { View } from "react-native";
+import { editorHtml } from "resume-factory-editor-web";
+import { WebView, type WebViewProps } from "react-native-webview";
 
-const editorHtml = require("resume-factory-editor-web");
+interface TextEditorProps extends WebViewProps {
+  _DEV_?: boolean | false;
+}
 
-export const TextEditor = () => {
-  console.log(editorHtml);
-  return <View />;
+export const TextEditor = ({
+  _DEV_ = false,
+  ...props
+}: TextEditorProps) => {
+
+  return (
+    <WebView
+      {...props}
+      originWhitelist={["*"]}
+      source={_DEV_ ? { uri: "http://10.0.0.222:3000"} : { html: editorHtml }}
+      style={{ flex: 1 }}
+      scalesPageToFit={false}
+    />
+  )
 };
 
 export default TextEditor;
