@@ -1,7 +1,0 @@
-{
-  "files": [],
-  "references": [
-    { "path": "./packages/webEditor" },
-    { "path": "./packages/TextEditor" }
-  ]
-}
