@@ -8,9 +8,6 @@
     },
     "test": {
       "cache": true
-    },
-    "e2e-ci--**/*": {
-      "dependsOn": ["^export"]
     }
   },
   "defaultBase": "main",
@@ -32,6 +29,7 @@
     {
       "plugin": "@nx/vite/plugin",
       "options": {
+        "startTargetName": "start",
         "buildTargetName": "build",
         "testTargetName": "test",
         "serveTargetName": "serve",
@@ -64,12 +62,6 @@
       "plugin": "@nx/jest/plugin",
       "options": {
         "targetName": "test"
-      }
-    },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
       }
     }
   ]
