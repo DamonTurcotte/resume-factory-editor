@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./examples/example" },
+    { "path": "./packages/webEditor" },
+    { "path": "./packages/TextEditor" }
+  ]
+}
