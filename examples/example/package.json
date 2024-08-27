@@ -5,11 +5,13 @@
   "dependencies": {
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
+    "expo": "*",
     "metro-config": "*",
     "react-native": "*",
-    "expo": "*",
+    "react-native-safe-area-context": "*",
     "react-native-svg": "*",
     "react-native-web": "*",
+    "react-native-webview": "*",
     "resume-factory-editor": "*"
   },
   "scripts": {
